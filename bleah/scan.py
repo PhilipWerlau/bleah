@@ -252,6 +252,8 @@ class ScanReceiver(DefaultDelegate):
                     self.devdata[dev.addr][desc] = val.decode('utf-8')
                 except UnicodeEncodeError:
                     self.devdata[dev.addr][desc] = repr(val)
+                except AttributeError:
+                    self.devdata[dev.addr][desc] = repr(val)
             else:
                 self.devdata[dev.addr][desc] = repr(val)
                 self.devdata[dev.addr]["descs"].append(desc)

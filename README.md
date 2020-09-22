@@ -19,7 +19,7 @@ Install [bluepy](https://github.com/IanHarvey/bluepy) from source:
 
 Then install `bleah`:
 
-    git clone https://github.com/evilsocket/bleah.git
+    git clone https://github.com/PhilipWerlau/bleah.git
     cd bleah
     python setup.py build
     sudo python setup.py install

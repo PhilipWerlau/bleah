@@ -377,9 +377,9 @@ def deserialize_char( char, props, raw=None, plain=False ):
 
         except Exception as e:
             if plain:
-                string = str(e)
+                string = str(raw)
             else:
-                string = red( str(e) )
+                string = red( str(raw) )
     else:
         string = ''
 
